@@ -5,4 +5,5 @@
 *.pyo
 __pycache__
 dist
+build
 MANIFEST
