@@ -10,8 +10,7 @@ Installation
 ------------
 
 ::
-    pip install hanziconv
-::
+    pip install hanziconv ::
 
 Command Line Tool Usage
 -----------------------
@@ -33,8 +32,7 @@ Command Line Tool Usage
       -o OUTFILE, --output OUTFILE
                             filename to save output, stdout if omitted
       -s, --simplified      convert to simplified characters
-      -v, --version         show program's version number and exit
-::
+      -v, --version         show program's version number and exit ::
 
 Conversion from stdin (press Ctrl-D to terminate input on Mac and Linun)
 
@@ -50,8 +48,7 @@ Conversion from stdin (press Ctrl-D to terminate input on Mac and Linun)
     繁簡轉換器
     Press Ctrl-D after 2 new lines
 
-    $
-::
+    $ ::
 
 Python API
 ----------
@@ -79,7 +76,6 @@ String Conversion
     mix English and Chinese. 繁简转换器
     >>> print(HanziConv.toTraditional('mix English and Chinese. 繁简转换器'))
     mix English and Chinese. 繁簡轉換器
-::
 
 Comparing String
 ****************
@@ -100,7 +96,6 @@ Comparing String
     False
     >>> HanziConv.same(str1, str4)
     True
-::
 
 Testing
 -------
@@ -111,5 +106,5 @@ run the tests by just run the py.test command line tool from the directory
 ::
     $ taz zxf hanziconv-<version>.tar.gz
     $ cd hanziconv-<version>/hanziconv
-    $ py.test
+    $ py.test ::
 
