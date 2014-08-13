@@ -1,0 +1,54 @@
+--------------------------------------------------------------------------------
+
+Copyright(c) 2014 Bernard Yue
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+--------------------------------------------------------------------------------
+
+Here's what the Apache license says in layman's terms:
+
+It allows you to:
+
+  - freely download and use Apache licensed software, in whole or in part, 
+    for personal, company internal, or commercial purposes;
+  - use Apache licensed software in packages or distributions that you create.
+
+It forbids you to:
+
+  - redistribute any piece of Apache licensed software without proper
+    attribution;
+  - use any marks owned by The Apache Software Foundation in any way that 
+    might state or imply that the Foundation endorses your distribution;
+  - use any marks owned by The Apache Software Foundation in any way that
+    might state or imply that you created the Apache licensed software in 
+    question.
+
+It requires you to:
+
+  - include a copy of the license in any redistribution you may make that
+    includes Apache licensed software;
+  - provide clear attribution to The Apache licensed Software licensor for any 
+    distributions that include the Apache licensed software.
+
+It does not require you to:
+
+  - include the source of the Apache licensed software itself, or of any 
+    modifications you may have made to it, in any redistribution you may 
+    assemble that includes it;
+  - submit changes that you make to the software back to the the Apache licensed
+    Software licensor (though such feedback is encouraged).
+
+
+You can refer http://www.apache.org/foundation/license-faq.html for more on
+Apache 2.0 license particulars

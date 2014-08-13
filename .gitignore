@@ -1,0 +1,8 @@
+*.swo
+*.swp
+*.~
+*.pyc
+*.pyo
+__pycache__
+dist
+MANIFEST
