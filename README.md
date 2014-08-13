@@ -9,7 +9,7 @@ package has two parts:
     pip install hanziconv
 
 ## Command Line Tool Usage
-    $ ./hanzi-convert.py --help
+    $ ./hanzi-convert --help
     usage: hanzi-convert [-h] [-o OUTFILE] [-s] [-v] infile
     
     Simplified and Traditional Chinese Character Conversion
