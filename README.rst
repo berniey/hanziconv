@@ -23,7 +23,7 @@ Command Line Tool Usage
     usage: hanzi-convert [-h] [-o OUTFILE] [-s] [-v] infile
 
     Simplified and Traditional Chinese Character Conversion
-    Version 0.2 (By Bernard Yue)
+    Version 0.2.1 (By Bernard Yue)
 
     Converting to Traditional Hanzi by default with no -s flag
 

@@ -28,10 +28,12 @@ encoding= 'utf-8'
 if sys.version >= '3':
     with open(filename, 'r', encoding=encoding) as fh:
         docstring = ''.join(fh.readlines())
+    packages= [ 'hanziconv' ]
 else:
     with open(filename, 'rU') as fh:
         fh = codecs.getreader(encoding)(fh)
         docstring = ''.join(fh.readlines())
+    packages= [ b'hanziconv' ]
 
 setup(name='hanziconv',
         version=__version__,
@@ -40,7 +42,7 @@ setup(name='hanziconv',
         author=__author__,
         author_email='hanzi.converter@gmail.com',
         url='https://github.com/berniey/hanziconv',
-        packages= [ 'hanziconv' ],
+        packages=packages,
         scripts=['hanzi-convert',],
         classifiers=_classifiers,
         license='Apache 2.0',

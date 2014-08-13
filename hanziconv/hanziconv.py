@@ -27,7 +27,7 @@ class by doing:
 
     >>> from hanziconv import HanziConv
 """
-__version__ = '0.2'
+__version__ = '0.2.1'
 __author__ = 'Bernard Yue'
 
 import os

@@ -1,5 +1,5 @@
 include *.md
 include *.py
 include LICENSE
-include README.md
+include README.rst
 include hanzi-convert
