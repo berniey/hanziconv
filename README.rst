@@ -38,7 +38,7 @@ Command Line Tool Usage
       -v, --version         show program's version number and exit
 
 
-Conversion from stdin (press Ctrl-D to terminate input on Mac and Linun)
+Conversion from stdin (press Ctrl-D to terminate input on POSIX systems)
 
 .. code-block:: sh
 
