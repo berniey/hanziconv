@@ -15,6 +15,7 @@ from __future__ import unicode_literals, absolute_import
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+from .hanziconv import HanziConv, __version__, __author__
 __doc__ = """
 Hanzi Converter 繁簡轉換器 | 繁简转换器
 
@@ -39,7 +40,7 @@ Usage:
     usage: hanzi-convert [-h] [-o OUTFILE] [-s] [-v] infile
 
     Simplified and Traditional Chinese Character Conversion
-    Version 0.1 (By Bernard Yue)
+    Version {} (By {})
 
     Converting to Traditional Hanzi by default with no -s flag
 
@@ -53,8 +54,7 @@ Usage:
       -s, --simplified      convert to simplified characters
       -v, --version         show program's version number and exit
 
-"""
-from .hanziconv import HanziConv, __version__, __author__
+""".format(__version__, __author__)
 
 __all__ = [ "HanziConv",]
 

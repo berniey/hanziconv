@@ -1,7 +1,8 @@
 #!/usr/bin/env python
-from __future__ import absolute_import
-from hanziconv import __version__, __author__, __doc__
+from __future__ import absolute_import, unicode_literals
+from hanziconv import __version__, __author__
 from distutils.core import setup
+import sys, codecs
 
 _classifiers = [
         'Development Status :: 4 - Beta',
@@ -22,10 +23,20 @@ _classifiers = [
         'Topic :: Utilities',
         ]
 
+filename = 'README.rst'
+encoding= 'utf-8'
+if sys.version >= '3':
+    with open(filename, 'r', encoding=encoding) as fh:
+        docstring = ''.join(fh.readlines())
+else:
+    with open(filename, 'rU') as fh:
+        fh = codecs.getreader(encoding)(fh)
+        docstring = ''.join(fh.readlines())
+
 setup(name='hanziconv',
         version=__version__,
         description='Hanzi Converter for Traditional and Simplified Chinese',
-        long_description=__doc__,
+        long_description=docstring,
         author=__author__,
         author_email='hanzi.converter@gmail.com',
         url='https://github.com/berniey/hanziconv',
