@@ -87,7 +87,7 @@ This module uses pytest.  If you downloaded the source distribution, you can
 run the tests by just run the py.test command line tool from the directory
 `hanziconv` of the source code.
 
-   $ taz zxf hanziconv-<version>.tar.gz
-   $ cd hanziconv-<version>/hanziconv
-   $ py.test
+    $ taz zxf hanziconv-<version>.tar.gz
+    $ cd hanziconv-<version>/hanziconv
+    $ py.test
 
