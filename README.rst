@@ -9,13 +9,13 @@ package has two parts:
 Installation
 ------------
 
-::
-    pip install hanziconv ::
+.. code-block:: sh
+    $ pip install hanziconv ::
 
 Command Line Tool Usage
 -----------------------
 
-::
+.. code-block:: sh
     $ ./hanzi-convert --help
     usage: hanzi-convert [-h] [-o OUTFILE] [-s] [-v] infile
 
@@ -32,11 +32,11 @@ Command Line Tool Usage
       -o OUTFILE, --output OUTFILE
                             filename to save output, stdout if omitted
       -s, --simplified      convert to simplified characters
-      -v, --version         show program's version number and exit ::
+      -v, --version         show program's version number and exit
 
 Conversion from stdin (press Ctrl-D to terminate input on Mac and Linun)
 
-::
+.. code-block:: sh
     $ ./hanzi-convert.py -
     Typing away
     Now write some chinese characters
@@ -48,7 +48,7 @@ Conversion from stdin (press Ctrl-D to terminate input on Mac and Linun)
     繁簡轉換器
     Press Ctrl-D after 2 new lines
 
-    $ ::
+    $
 
 Python API
 ----------
@@ -58,7 +58,7 @@ This module works for both Python 2.x and 3.x.
 String Conversion
 *****************
 
-::
+.. code-block:: pycon
     >>> from hanziconv import HanziConv
     >>> print(HanziConv.toSimplified('繁簡轉換器'))
     繁简转换器
@@ -80,7 +80,7 @@ String Conversion
 Comparing String
 ****************
 
-::
+.. code-block:: pycon
     >>> from hanziconv import HanziConv
     >>> u'繁簡轉換器' ==  u'繁简转换器'
     False
@@ -103,7 +103,7 @@ This module uses pytest.  If you downloaded the source distribution, you can
 run the tests by just run the py.test command line tool from the directory
 ``hanziconv`` of the source code.
 
-::
+.. code-block:: sh
     $ taz zxf hanziconv-<version>.tar.gz
     $ cd hanziconv-<version>/hanziconv
     $ py.test ::
