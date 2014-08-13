@@ -3,14 +3,15 @@ Hanzi Converter 繁簡轉換器 | 繁简转换器
 This tool converts between simplified and traditional Chinese Characters.  The
 package has two parts:
 
-  - a command line tool, *hanzi-convert*
-  - a python library: *hanziconv*
+  - a command line tool, ``hanzi-convert``
+  - a python library: ``hanziconv``
 
 Installation
 ------------
 
 ::
     pip install hanziconv
+::
 
 Command Line Tool Usage
 -----------------------
@@ -33,6 +34,7 @@ Command Line Tool Usage
                             filename to save output, stdout if omitted
       -s, --simplified      convert to simplified characters
       -v, --version         show program's version number and exit
+::
 
 Conversion from stdin (press Ctrl-D to terminate input on Mac and Linun)
 
@@ -49,6 +51,7 @@ Conversion from stdin (press Ctrl-D to terminate input on Mac and Linun)
     Press Ctrl-D after 2 new lines
 
     $
+::
 
 Python API
 ----------
@@ -76,6 +79,7 @@ String Conversion
     mix English and Chinese. 繁简转换器
     >>> print(HanziConv.toTraditional('mix English and Chinese. 繁简转换器'))
     mix English and Chinese. 繁簡轉換器
+::
 
 Comparing String
 ****************
@@ -96,12 +100,13 @@ Comparing String
     False
     >>> HanziConv.same(str1, str4)
     True
+::
 
 Testing
 -------
 This module uses pytest.  If you downloaded the source distribution, you can
 run the tests by just run the py.test command line tool from the directory
-*hanziconv* of the source code.
+``hanziconv`` of the source code.
 
 ::
     $ taz zxf hanziconv-<version>.tar.gz
