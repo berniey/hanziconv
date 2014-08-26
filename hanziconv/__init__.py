@@ -32,7 +32,7 @@ Example.:
     繁简转换器
     >>> print(HanziConv.toTraditional('繁简转换器'))
     繁簡轉換器
-    >>> HanziConv.same(u'繁簡轉換器', u'繁简转换器')
+    >>> HanziConv.same('繁簡轉換器', '繁简转换器')
     True
 
 The module also provides a command line tool `hanzi-convert`.
