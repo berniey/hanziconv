@@ -1,8 +1,8 @@
 Hanzi Converter 繁簡轉換器 | 繁简转换器
 =======================================
 
-This tool converts between simplified and traditional Chinese Characters.  This
-package consist of two parts:
+This tool converts between simplified and traditional Chinese Characters.
+This package consists of two parts:
 
   - a command line tool, ``hanzi-convert``
   - a python library: ``hanziconv``
@@ -21,7 +21,8 @@ Installation
 Command Line Tool
 -----------------
 
-The tool requires Python 2.7+ (should work for Python 2.6+ but was not tested)
+The tool requires Python 2.7+ (should work for Python 2.6, 3.0 and 3.1 but
+was not tested)
 
 Synopsis
 ********
