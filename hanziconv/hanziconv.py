@@ -27,8 +27,6 @@ class by doing:
 
     >>> from hanziconv import HanziConv
 """
-__version__ = '0.2.1'
-__author__ = 'Bernard Yue'
 
 import os
 from .charmap import simplified_charmap, traditional_charmap
@@ -45,7 +43,7 @@ class HanziConv(object):
         """Convert `text` to Traditional characters if `toTraditional` is
         True, else convert to simplified characters
         """
-        if type(text) != type(''):
+        if isinstance(text, bytes):
             text = text.decode('utf-8')
 
         fromMap = cls.__simplified_charmap

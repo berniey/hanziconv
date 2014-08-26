@@ -57,6 +57,7 @@ class Main(object):
         return parser.parse_args()
 
     def process(self, infile, outfile, simplified):
+        """Application workflow"""
         data = self.read(infile)
         func = HanziConv.toTraditional
         if simplified:
@@ -75,6 +76,8 @@ class Main(object):
             warnings.simplefilter("ignore")
             if filename == '-':
                 filename = ''
+                sys.stderr.write('Press Ctrl-D with finished' + os.linesep)
+                sys.stderr.flush()
 
         if sys.version >= '3':
             data = self.py3GetData(filename)
@@ -82,29 +85,31 @@ class Main(object):
             data = self.py2GetData(filename)
         return data
 
-    def py2GetData(self, filename, encoding='utf-8'):
+    def py2GetData(self, filename):
         """read all unicode data from file for python 2.x.  Return all data
         in `filename` as `encoding`"""
+        encoding = 'utf-8'
         data = ''
         if filename:
             with open(filename, 'rU') as fh:
                 fh = codecs.getreader(encoding)(fh)
-                data = ''.join(fh.readlines())
+                data = fh.read()
         else:
             sys.stdin = codecs.getreader(encoding)(sys.stdin)
-            data = ''.join(sys.stdin.readlines())
+            data = sys.stdin.read()
         return data
 
-    def py3GetData(self, filename, encoding='utf-8'):
+    def py3GetData(self, filename):
         """read all unicode data from file for python 3.x.  Return all data
         in `filename` as `encoding`
         """
+        encoding = 'utf-8'
         data = ''
         if filename:
             with open(filename, 'r', encoding=encoding) as fh:
-                data = ''.join(fh.readlines())
+                data = fh.read()
         else:
-            data = ''.join(sys.stdin.readlines())
+            data = sys.stdin.read()
         return data
 
     def write(self, data, filename):

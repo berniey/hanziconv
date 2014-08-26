@@ -1,10 +1,14 @@
 Hanzi Converter 繁簡轉換器 | 繁简转换器
 =======================================
-This tool converts between simplified and traditional Chinese Characters.  The
-package has two parts:
+
+This tool converts between simplified and traditional Chinese Characters.  This
+package consist of two parts:
 
   - a command line tool, ``hanzi-convert``
   - a python library: ``hanziconv``
+
+.. image:: https://travis-ci.org/berniey/hanziconv.png?branch=master
+   :target: https://travis-ci.org/berniey/hanziconv
 
 Installation
 ------------
@@ -14,8 +18,13 @@ Installation
     $ pip install hanziconv
 
 
-Command Line Tool Usage
------------------------
+Command Line Tool
+-----------------
+
+The tool requires Python 2.7+ (should work for Python 2.6+ but was not tested)
+
+Synopsis
+********
 
 .. code-block:: sh
 
@@ -23,7 +32,7 @@ Command Line Tool Usage
     usage: hanzi-convert [-h] [-o OUTFILE] [-s] [-v] infile
 
     Simplified and Traditional Chinese Character Conversion
-    Version 0.2.1 (By Bernard Yue)
+    Version 0.2.2 (By Bernard Yue)
 
     Converting to Traditional Hanzi by default with no -s flag
 
@@ -38,11 +47,15 @@ Command Line Tool Usage
       -v, --version         show program's version number and exit
 
 
+Example
+*******
+
 Conversion from stdin (press Ctrl-D to terminate input on POSIX systems)
 
 .. code-block:: sh
 
     $ ./hanzi-convert.py -
+    Press Crtl-D when finished
     Typing away
     Now write some chinese characters
     繁简转换器
@@ -109,15 +122,14 @@ Comparing String
 
 Testing
 -------
-This module uses pytest.  If you downloaded the source distribution, you can
-run the tests by just run the py.test command line tool from the directory
-``hanziconv`` of the source code.
+If you download the source distribution, you can run unit tests by running
+standrad ``python setup.py test``
 
 .. code-block:: sh
 
-    $ taz zxf hanziconv-<version>.tar.gz
-    $ cd hanziconv-<version>/hanziconv
-    $ py.test
+    $ tar zxf hanziconv-0.2.2.tar.gz
+    $ cd hanziconv-0.2.2
+    $ python setup.py test
 
 
 License

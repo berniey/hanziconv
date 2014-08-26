@@ -1,9 +1,9 @@
-*.swo
-*.swp
+.coverage
+*.sw[op]
 *.~
-*.pyc
-*.pyo
+*.py[co]
 __pycache__
 dist
 build
+htmlcov
 MANIFEST

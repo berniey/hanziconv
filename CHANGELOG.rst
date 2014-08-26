@@ -1,0 +1,16 @@
+Version 0.2.2
+=============
+  - Integrate `setup.py` with unit test
+  - Documentation upgrade
+
+Version 0.2.1
+=============
+  - Fixing a bug from distuils.core that stop installation from running
+
+Version 0.2
+===========
+  - Fixing documentation
+
+Version 0.1
+===========
+  - Initial Release
