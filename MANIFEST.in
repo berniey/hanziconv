@@ -1,5 +1,6 @@
 include *.md
 include *.py
+include CHANGELOG.rst
 include LICENSE
 include README.rst
 include hanzi-convert

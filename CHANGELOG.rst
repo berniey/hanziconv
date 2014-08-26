@@ -1,7 +1,10 @@
 Version 0.2.2
 =============
-  - Integrate `setup.py` with unit test
-  - Documentation upgrade
+  - Integrate ``setup.py`` with unit tests
+  - Documentation fixes
+  - Continous integration
+  - PEP8 compliance
+  - Minor enhancement of code
 
 Version 0.2.1
 =============
