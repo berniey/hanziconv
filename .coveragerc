@@ -3,3 +3,4 @@ omit = test/*
        hanziconv/test/*
        setup.py
        runtests.py
+       docs/*
