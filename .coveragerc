@@ -1,0 +1,5 @@
+[run]
+omit = test/*
+       hanziconv/test/*
+       setup.py
+       runtests.py

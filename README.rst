@@ -2,9 +2,9 @@ Hanzi Converter 繁簡轉換器 | 繁简转换器
 =======================================
 
 This tool converts between simplified and traditional Chinese Characters.
-This package consists of two parts:
+It consists of two parts:
 
-  - a command line tool, ``hanzi-convert``
+  - a command line tool: ``hanzi-convert``
   - a python library: ``hanziconv``
 
 .. image:: https://travis-ci.org/berniey/hanziconv.png?branch=master
@@ -51,7 +51,7 @@ Synopsis
 Example
 *******
 
-Conversion from stdin (press Ctrl-D to terminate input on POSIX systems)
+Conversion from stdin
 
 .. code-block:: sh
 
@@ -60,12 +60,10 @@ Conversion from stdin (press Ctrl-D to terminate input on POSIX systems)
     Typing away
     Now write some chinese characters
     繁简转换器
-    Press Ctrl-D after 2 new lines
 
     Typing away
     Now write some chinese characters
     繁簡轉換器
-    Press Ctrl-D after 2 new lines
 
     $
 
@@ -73,7 +71,7 @@ Conversion from stdin (press Ctrl-D to terminate input on POSIX systems)
 Python API
 ----------
 
-This module works for both Python 2.x and 3.x.
+This module requires Python 2.7+ (should work for Python 2.6 but was not tested)
 
 String Conversion
 *****************
@@ -123,8 +121,8 @@ Comparing String
 
 Testing
 -------
-If you download the source distribution, you can run unit tests by running
-standrad ``python setup.py test``
+You can either run the standalone ``runtests.py`` or standard
+``python setup.py test``
 
 .. code-block:: sh
 

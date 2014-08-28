@@ -20,24 +20,15 @@ from .hanziconv import HanziConv
 __version__ = '0.2.2'
 __author__ = 'Bernard Yue'
 __doc__ = """
-Hanzi Converter 繁簡轉換器 | 繁简转换器
+This module converts between simplified and traditional Chinese Characters.
+It consists of two parts:
 
-This module provides functions converting chinese text between simplified and
-traditional characters.  It returns unicode represnetation of the text.
+      - a command line tool: ``hanzi-convert``
+      - a python library: ``hanziconv``
 
-Example.:
+**Command Line Tool Usage:**
 
-    >>> from hanziconv import HanziConv
-    >>> print(HanziConv.toSimplified('繁簡轉換器'))
-    繁简转换器
-    >>> print(HanziConv.toTraditional('繁简转换器'))
-    繁簡轉換器
-    >>> HanziConv.same('繁簡轉換器', '繁简转换器')
-    True
-
-The module also provides a command line tool `hanzi-convert`.
-
-Usage:
+.. code-block:: sh
 
     $ ./hanzi-convert --help
     usage: hanzi-convert [-h] [-o OUTFILE] [-s] [-v] infile
@@ -56,6 +47,17 @@ Usage:
                             filename to save output, stdout if omitted
       -s, --simplified      convert to simplified characters
       -v, --version         show program's version number and exit
+
+**Python Library Example:**
+
+    >>> from hanziconv import HanziConv
+    >>> print(HanziConv.toSimplified('繁簡轉換器'))
+    繁简转换器
+    >>> print(HanziConv.toTraditional('繁简转换器'))
+    繁簡轉換器
+    >>> HanziConv.same('繁簡轉換器', '繁简转换器')
+    True
+
 
 """.format(__version__, __author__)
 

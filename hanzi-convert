@@ -34,7 +34,8 @@ class Main(object):
 
     def parseArgs(self):
         """parsing input arguments
-        :return :       a parser.parse_arg() object
+
+        :returns :       a parser.parse_arg() object
         """
         desc = textwrap.dedent("""\
                 Simplified and Traditional Chinese Character Conversion
@@ -49,7 +50,7 @@ class Main(object):
                 help='filename | "-", corresponds to stdin')
         parser.add_argument('-o', '--output', dest='outfile',
                 default='',
-                help='filename to save output, stdout if omitted')
+                help='filename to save output, default to stdout')
         parser.add_argument('-s', '--simplified', action='store_true',
                 help='convert to simplified')
         parser.add_argument('-v', '--version', action='version',
@@ -57,7 +58,14 @@ class Main(object):
         return parser.parse_args()
 
     def process(self, infile, outfile, simplified):
-        """Application workflow"""
+        """Application workflow
+
+        :params infile:     name of input file ('-' for stdin)
+        :params outfile:    name of output file ('' for stdout)
+        :params simplified: bool flag.  True -- convert to Simplified Text
+                            False -- otherwise
+        :returns :          None
+        """
         data = self.read(infile)
         func = HanziConv.toTraditional
         if simplified:
@@ -68,8 +76,10 @@ class Main(object):
         self.write(converted, outfile)
 
     def read(self, filename):
-        """read content from filename, and stdin if filename = ''
-        :return :       html as string
+        """Read content from filename, and stdin if filename = '-'
+
+        :params filename: name of input file ('-' for stdin)
+        :returns :        html as string
         """
         encoding = 'utf-8'
         with warnings.catch_warnings():
@@ -87,7 +97,11 @@ class Main(object):
 
     def py2GetData(self, filename):
         """read all unicode data from file for python 2.x.  Return all data
-        in `filename` as `encoding`"""
+        in `filename` as `encoding`
+
+        :params filename: name of input file ('-' for stdin)
+        :returns :        data in 
+        """
         encoding = 'utf-8'
         data = ''
         if filename:
@@ -102,6 +116,9 @@ class Main(object):
     def py3GetData(self, filename):
         """read all unicode data from file for python 3.x.  Return all data
         in `filename` as `encoding`
+
+        :params filename: name of input file ('-' for stdin)
+        :returns :        data in 
         """
         encoding = 'utf-8'
         data = ''
@@ -114,7 +131,10 @@ class Main(object):
 
     def write(self, data, filename):
         """write `data` to `filename`, if 'filename` is '', write to stdout
-        :return :       None
+
+        :params data:       (multiline) string to write to `filename`
+        :params filename:   name of output file ('' for stdout)
+        :returns :          None
         """
         if sys.version >= '3':
             self.py3WriteData(data, filename)
@@ -122,7 +142,12 @@ class Main(object):
             self.py2WriteData(data, filename)
 
     def py2WriteData(self, data, filename):
-        """write unicode to file, python 2.x version"""
+        """write unicode to file, python 2.x version
+
+        :params data:       (multiline) string to write to `filename`
+        :params filename:   name of output file ('' for stdout)
+        :returns :          None
+        """
         if filename:
             with codecs.open(filename, 'wU', encoding='utf-8') as fh:
                 fh.write(data)
@@ -132,7 +157,12 @@ class Main(object):
             sys.stdout.flush()
 
     def py3WriteData(self, data, filename):
-        """write unicode to file, python 3.x version"""
+        """write unicode to file, python 3.x version
+
+        :params data:       (multiline) string to write to `filename`
+        :params filename:   name of output file ('' for stdout)
+        :returns :          None
+        """
         if filename:
             with open(filename, 'w', encoding='utf-8') as fh:
                 fh.write(data)

@@ -42,6 +42,11 @@ class HanziConv(object):
     def __convert(cls, text, toTraditional=True):
         """Convert `text` to Traditional characters if `toTraditional` is
         True, else convert to simplified characters
+
+        :param text:           data to convert
+        :param toTraditional:  True -- convert to traditional text
+                               False -- covert to simplified text
+        :returns:              converted 'text`
         """
         if isinstance(text, bytes):
             text = text.decode('utf-8')
@@ -65,11 +70,19 @@ class HanziConv(object):
     def toSimplified(cls, text):
         """Convert `text` to simplified character string.  Assuming text is
         traditional character string
+
         :param text:  text to convert
-        :return    :  converted UTF-8 characters
+        :returns:     converted UTF-8 characters
 
         >>> from hanziconv import HanziConv
         >>> print(HanziConv.toSimplified('繁簡轉換器'))
+        繁简转换器
+
+        >>> import sys
+        >>> from hanziconv import HanziConv
+        >>> if sys.version < '3':
+        ...     print(HanziConv.toSimplified(b'繁簡轉換器'))
+        ...
         繁简转换器
         """
         return cls.__convert(text, toTraditional=False)
@@ -78,11 +91,19 @@ class HanziConv(object):
     def toTraditional(cls, text):
         """Convert `text` to traditional character string.  Assuming text is
         simplified character string
+
         :param text:  text to convert
-        :return    :  converted UTF-8 characters
+        :returns:     converted UTF-8 characters
 
         >>> from hanziconv import HanziConv
         >>> print(HanziConv.toTraditional('繁简转换器'))
+        繁簡轉換器
+
+        >>> import sys
+        >>> from hanziconv import HanziConv
+        >>> if sys.version < '3':
+        ...     print(HanziConv.toTraditional(b'繁简转换器'))
+        ...
         繁簡轉換器
         """
         return cls.__convert(text, toTraditional=True)
@@ -91,6 +112,11 @@ class HanziConv(object):
     def same(cls, text1, text2):
         """Return True if text1 and text2 meant literally the same, False
         otherwise
+
+        :param text1: string to compare to ``text2``
+        :param text2: string to compare to ``text1``
+        :returns:     **True**  -- ``text1`` and ``text2`` are the same in meaning,
+                      **False** -- otherwise
 
         >>> from hanziconv import HanziConv
         >>> print(HanziConv.same('繁简转换器', '繁簡轉換器'))
