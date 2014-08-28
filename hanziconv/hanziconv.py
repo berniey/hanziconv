@@ -77,13 +77,6 @@ class HanziConv(object):
         >>> from hanziconv import HanziConv
         >>> print(HanziConv.toSimplified('繁簡轉換器'))
         繁简转换器
-
-        >>> import sys
-        >>> from hanziconv import HanziConv
-        >>> if sys.version < '3':
-        ...     print(HanziConv.toSimplified(b'繁簡轉換器'))
-        ...
-        繁简转换器
         """
         return cls.__convert(text, toTraditional=False)
 
@@ -97,13 +90,6 @@ class HanziConv(object):
 
         >>> from hanziconv import HanziConv
         >>> print(HanziConv.toTraditional('繁简转换器'))
-        繁簡轉換器
-
-        >>> import sys
-        >>> from hanziconv import HanziConv
-        >>> if sys.version < '3':
-        ...     print(HanziConv.toTraditional(b'繁简转换器'))
-        ...
         繁簡轉換器
         """
         return cls.__convert(text, toTraditional=True)
