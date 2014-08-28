@@ -11,6 +11,7 @@
 #
 # All configuration values have a default; values that are commented out
 # serve to show the default.
+from __future__ import unicode_literals
 
 import sys
 import os
@@ -47,7 +48,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'hanziconv'
-copyright = u'2014, Bernard Yue'
+copyright = '2014, Bernard Yue'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -199,8 +200,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  ('index', 'hanziconv.tex', u'hanziconv Documentation',
-   u'Bernard Yue', 'manual'),
+  ('index', 'hanziconv.tex', 'hanziconv Documentation',
+   'Bernard Yue', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -229,8 +230,8 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'hanziconv', u'hanziconv Documentation',
-     [u'Bernard Yue'], 1)
+    ('index', 'hanziconv', 'hanziconv Documentation',
+     ['Bernard Yue'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -243,8 +244,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'hanziconv', u'hanziconv Documentation',
-   u'Bernard Yue', 'hanziconv', 'One line description of project.',
+  ('index', 'hanziconv', 'hanziconv Documentation',
+   'Bernard Yue', 'hanziconv', 'One line description of project.',
    'Miscellaneous'),
 ]
 
@@ -264,13 +265,13 @@ texinfo_documents = [
 # -- Options for Epub output ----------------------------------------------
 
 # Bibliographic Dublin Core info.
-epub_title = u'hanziconv'
-epub_author = u'Bernard Yue'
-epub_publisher = u'Bernard Yue'
-epub_copyright = u'2014, Bernard Yue'
+epub_title = 'hanziconv'
+epub_author = 'Bernard Yue'
+epub_publisher = 'Bernard Yue'
+epub_copyright = '2014, Bernard Yue'
 
 # The basename for the epub file. It defaults to the project name.
-#epub_basename = u'hanziconv'
+#epub_basename = 'hanziconv'
 
 # The HTML theme for the epub output. Since the default themes are not optimized
 # for small screen space, using the same theme for HTML and epub output is
