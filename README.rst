@@ -15,11 +15,11 @@ It consists of two parts:
    :target: https://pypi.python.org/pypi/hanziconv/
    :alt: Latest Version
 
-.. image:: http://raw.githubusercontent.com/berniey/hanziconv/master/docs/_statics/doc-0.2.2-brightgreen.png
+.. image:: https://raw.githubusercontent.com/berniey/hanziconv/master/docs/_static/doc-0.2.2-brightgreen.png
    :target: https://pythonhosted.org/hanziconv/
    :alt: Documentation
 
-.. image:: http://raw.githubusercontent.com/berniey/hanziconv/master/docs/_statics/license.png
+.. image:: https://raw.githubusercontent.com/berniey/hanziconv/master/docs/_static/license.png
    :target: https://raw.githubusercontent.com/berniey/hanziconv/master/LICENSE
    :alt: License
 
