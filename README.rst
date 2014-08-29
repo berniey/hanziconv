@@ -9,6 +9,19 @@ It consists of two parts:
 
 .. image:: https://travis-ci.org/berniey/hanziconv.png?branch=master
    :target: https://travis-ci.org/berniey/hanziconv
+   :alt: Build Statu
+
+.. image:: https://pypip.in/version/hanziconv/badge.svg?text=version
+   :target: https://pypi.python.org/pypi/hanziconv/
+   :alt: Latest Version
+
+.. image:: http://img.shields.io/badge/Docs-0.2.2-brightgreen.svg
+   :target: https://pythonhosted.org/hanziconv/
+   :alt: Documentation
+
+.. image:: https://pypip.in/license/hanziconv/badge.svg
+   :target: https://raw.githubusercontent.com/berniey/hanziconv/master/LICENSE
+   :alt: License
 
 Installation
 ------------
@@ -71,7 +84,8 @@ Conversion from stdin
 Python API
 ----------
 
-This module requires Python 2.7+ (should work for Python 2.6 but was not tested)
+This module requires Python 2.7+ (should work for Python 2.6 but was not
+tested).  See `https://pythonhosted.org/hanziconv/`_ for full documentation.
 
 String Conversion
 *****************
