@@ -85,7 +85,7 @@ Python API
 ----------
 
 This module requires Python 2.7+ (should work for Python 2.6 but was not
-tested).  See `https://pythonhosted.org/hanziconv/`_ for full documentation.
+tested).  See https://pythonhosted.org/hanziconv/ for full documentation.
 
 String Conversion
 *****************
