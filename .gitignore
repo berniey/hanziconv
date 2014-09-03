@@ -6,5 +6,6 @@ __pycache__
 dist
 build
 docs/_build
+hanziconv.egg-info
 htmlcov
 MANIFEST

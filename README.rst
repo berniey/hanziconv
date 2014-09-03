@@ -15,7 +15,7 @@ It consists of two parts:
    :target: https://pypi.python.org/pypi/hanziconv/
    :alt: Latest Version
 
-.. image:: https://raw.githubusercontent.com/berniey/hanziconv/master/docs/_static/doc-0.2.2-brightgreen.png
+.. image:: https://raw.githubusercontent.com/berniey/hanziconv/master/docs/_static/doc-0.2.3-brightgreen.png
    :target: https://pythonhosted.org/hanziconv/
    :alt: Documentation
 
@@ -34,8 +34,7 @@ Installation
 Command Line Tool
 -----------------
 
-The tool requires Python 2.7+ (should work for Python 2.6, 3.0 and 3.1 but
-was not tested)
+The tool requires Python 2.6+
 
 Synopsis
 ********
@@ -46,7 +45,7 @@ Synopsis
     usage: hanzi-convert [-h] [-o OUTFILE] [-s] [-v] infile
 
     Simplified and Traditional Chinese Character Conversion
-    Version 0.2.2 (By Bernard Yue)
+    Version 0.2.3 (By Bernard Yue)
 
     Converting to Traditional Hanzi by default with no -s flag
 
@@ -58,7 +57,7 @@ Synopsis
       -o OUTFILE, --output OUTFILE
                             filename to save output, stdout if omitted
       -s, --simplified      convert to simplified characters
-      -v, --version         show program\'s version number and exit
+      -v, --version         show program's version number and exit
 
 
 Example
@@ -83,8 +82,8 @@ Conversion from stdin
 Python API
 ----------
 
-This module requires Python 2.7+ (should work for Python 2.6 but was not
-tested).  See https://pythonhosted.org/hanziconv/ for full documentation.
+This module requires Python 2.6+.  See https://pythonhosted.org/hanziconv/
+for full documentation.
 
 String Conversion
 *****************
@@ -139,8 +138,8 @@ You can either run the standalone ``runtests.py`` or standard
 
 .. code-block:: sh
 
-    $ tar zxf hanziconv-0.2.2.tar.gz
-    $ cd hanziconv-0.2.2
+    $ tar zxf hanziconv-0.2.3.tar.gz
+    $ cd hanziconv-0.2.3
     $ python setup.py test
 
 

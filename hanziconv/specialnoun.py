@@ -22,6 +22,12 @@ from collections import defaultdict
 s2t_exceptions = defaultdict(list)
 
 masterlist = (
+    ('几',
+     """
+     """,
+     """
+        茶几
+     """),
     ('只',
      """
         只有 只欠 只可 只說 只是 只要 只能 只好 只不 只得

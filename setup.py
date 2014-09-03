@@ -3,8 +3,14 @@ from __future__ import absolute_import, unicode_literals
 import sys
 import codecs
 
+try:
+    from setuptools import setup, Command
+    extra = dict(include_package_data=True)
+except:
+    from distutils.core import setup, Command
+    extra = dict()
 from hanziconv import __version__, __author__
-from distutils.core import setup, Command
+
 
 _classifiers = '''
         Development Status :: 4 - Beta
@@ -22,6 +28,7 @@ _classifiers = '''
         Operating System :: POSIX
         Programming Language :: Python
         Programming Language :: Python :: 2
+        Programming Language :: Python :: 2.6
         Programming Language :: Python :: 2.7
         Programming Language :: Python :: 3
         Programming Language :: Python :: 3.2
@@ -34,6 +41,7 @@ _classifiers = '''
         Topic :: Utilities
         '''
 _classifiers = [s.strip() for s in _classifiers.splitlines() if s.strip()]
+
 
 filename = 'README.rst'
 encoding = 'utf-8'
@@ -66,14 +74,15 @@ class PyTest(Command):
 
 
 setup(name='hanziconv',
-        version=__version__,
-        description='Hanzi Converter for Traditional and Simplified Chinese',
-        long_description=docstring,
-        author=__author__,
-        author_email='hanzi.converter@gmail.com',
-        url='https://github.com/berniey/hanziconv',
-        packages=packages,
-        scripts=['hanzi-convert', ],
-        cmdclass=dict(test=PyTest),
-        classifiers=_classifiers,
-        license='Apache 2.0',)
+      version=__version__,
+      description='Hanzi Converter for Traditional and Simplified Chinese',
+      long_description=docstring,
+      author=__author__,
+      author_email='hanzi.converter@gmail.com',
+      url='https://github.com/berniey/hanziconv',
+      packages=packages,
+      scripts=['hanzi-convert', ],
+      cmdclass=dict(test=PyTest),
+      classifiers=_classifiers,
+      license='Apache 2.0',
+      **extra)

@@ -17,7 +17,7 @@ from __future__ import unicode_literals, absolute_import
 #
 from .hanziconv import HanziConv
 
-__version__ = '0.2.2'
+__version__ = '0.2.3'
 __author__ = 'Bernard Yue'
 __doc__ = """
 This module converts between simplified and traditional Chinese Characters.

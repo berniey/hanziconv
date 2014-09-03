@@ -1,6 +1,10 @@
-include *.md
 include *.py
+recursive-include hanziconv *.py
 include CHANGELOG.rst
 include LICENSE
 include README.rst
 include hanzi-convert
+include pytest.ini
+include requirements.txt
+include docs/_build/html
+recursive-include docs/_build/html *.html *.inv *.js *.css *.gif *.png *.jpg *.txt
