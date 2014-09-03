@@ -58,7 +58,7 @@ Synopsis
       -o OUTFILE, --output OUTFILE
                             filename to save output, stdout if omitted
       -s, --simplified      convert to simplified characters
-      -v, --version         show program's version number and exit
+      -v, --version         show program\'s version number and exit
 
 
 Example
@@ -68,16 +68,15 @@ Conversion from stdin
 
 .. code-block:: sh
 
-    $ ./hanzi-convert.py -
+    $ ./hanzi-convert -
     Press Crtl-D when finished
     Typing away
     Now write some chinese characters
     繁简转换器
-
+    ^D
     Typing away
     Now write some chinese characters
     繁簡轉換器
-
     $
 
 
