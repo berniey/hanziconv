@@ -34,7 +34,7 @@ It consists of two parts:
     usage: hanzi-convert [-h] [-o OUTFILE] [-s] [-v] infile
 
     Simplified and Traditional Chinese Character Conversion
-    Version {} (By {})
+    Version {0} (By {1})
 
     Converting to Traditional Hanzi by default with no -s flag
 
