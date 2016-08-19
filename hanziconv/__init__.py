@@ -1,6 +1,5 @@
-from __future__ import unicode_literals, absolute_import
 # -*- coding: utf-8 -*-
-#
+from __future__ import unicode_literals, absolute_import
 # Copyright 2014 Bernard Yue
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
