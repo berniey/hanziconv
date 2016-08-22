@@ -1,3 +1,11 @@
+Version 0.3 (2016-08-20)
+========================
+  - expanding character map by using the character map from the Chinese
+    University of Hong Kong (http://bit.ly/2be32he) as based. (Thanks
+    Joe Wong)
+  - conversion speed improvement
+  - fix an encoding bug reported by some users
+
 Version 0.2.2 (2014-08-28)
 ==========================
   - Integrate ``setup.py`` with unit tests

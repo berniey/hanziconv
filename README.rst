@@ -9,17 +9,17 @@ It consists of two parts:
 
 .. image:: https://travis-ci.org/berniey/hanziconv.png?branch=master
    :target: https://travis-ci.org/berniey/hanziconv
-   :alt: Build Statu
+   :alt: Build Status
 
-.. image:: https://pypip.in/version/hanziconv/badge.svg?text=version
+.. image:: https://img.shields.io/badge/version-0.3-brightgreen.svg?style=plastic
    :target: https://pypi.python.org/pypi/hanziconv/
    :alt: Latest Version
 
-.. image:: https://raw.githubusercontent.com/berniey/hanziconv/master/docs/_static/doc-0.2.3-brightgreen.png
+.. image:: https://img.shields.io/badge/doc-0.3-brightgreen.svg?style=plastic
    :target: https://pythonhosted.org/hanziconv/
    :alt: Documentation
 
-.. image:: https://raw.githubusercontent.com/berniey/hanziconv/master/docs/_static/license.png
+.. image:: https://img.shields.io/badge/license-Apache%202.0-blue.svg?style=plastic
    :target: https://raw.githubusercontent.com/berniey/hanziconv/master/LICENSE
    :alt: License
 

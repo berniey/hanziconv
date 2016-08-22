@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-from __future__ import unicode_literals, absolute_import
 # Copyright 2014 Bernard Yue
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,9 +13,10 @@ from __future__ import unicode_literals, absolute_import
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+from __future__ import unicode_literals, absolute_import
 from .hanziconv import HanziConv
 
-__version__ = '0.2.3'
+__version__ = '0.3'
 __author__ = 'Bernard Yue'
 __doc__ = """
 This module converts between simplified and traditional Chinese Characters.

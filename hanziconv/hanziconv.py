@@ -57,14 +57,14 @@ class HanziConv(object):
             fromMap = cls.__traditional_charmap
             toMap = cls.__simplified_charmap
 
-        final = ''
+        final = []
         for c in text:
             index = fromMap.find(c)
             if index != -1:
-                final += toMap[index]
+                final.append(toMap[index])
             else:
-                final += c
-        return final
+                final.append(c)
+        return ''.join(final)
 
     @classmethod
     def toSimplified(cls, text):
