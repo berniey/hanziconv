@@ -1,3 +1,7 @@
+Version 0.3.2 (2016-09-01)
+==========================
+  - fix pip README error
+
 Version 0.3.1 (2016-09-01)
 ==========================
   - fix version error in documentation

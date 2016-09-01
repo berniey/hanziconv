@@ -1,20 +1,23 @@
 Hanzi Converter 繁簡轉換器 | 繁简转换器
 =======================================
+
 This tool converts between simplified and traditional Chinese Characters.
 It consists of two parts:
 
   - a command line tool: ``hanzi-convert``
   - a python library: ``hanziconv``
 
+This module supports both Python 2 and 3
+
 .. image:: https://travis-ci.org/berniey/hanziconv.png?branch=master
    :target: https://travis-ci.org/berniey/hanziconv
    :alt: Build Status
 
-.. image:: https://img.shields.io/badge/version-0.3.1-brightgreen.svg?style=plastic
+.. image:: https://img.shields.io/badge/version-0.3.2-brightgreen.svg?style=plastic
    :target: https://pypi.python.org/pypi/hanziconv/
    :alt: Latest Version
 
-.. image:: https://img.shields.io/badge/doc-0.3.1-brightgreen.svg?style=plastic
+.. image:: https://img.shields.io/badge/doc-0.3.2-brightgreen.svg?style=plastic
    :target: https://pythonhosted.org/hanziconv/
    :alt: Documentation
 
@@ -55,7 +58,7 @@ Synopsis
     usage: hanzi-convert [-h] [-o OUTFILE] [-s] [-v] infile
 
     Simplified and Traditional Chinese Character Conversion
-    Version 0.3.1 (By Bernard Yue)
+    Version 0.3.2 (By Bernard Yue)
 
     Converting to Traditional Hanzi by default with no -s flag
 
@@ -130,7 +133,9 @@ for to avoid changing your currently operating environment.
 
 License
 -------
+
 | This module is distributed under Apache License Version 2.0.
+
 The character map used in this module is based on the Multi-function
 Chinese Character Database developed by Chinese University of Hong Kong.
 
