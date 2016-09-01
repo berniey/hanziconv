@@ -100,7 +100,7 @@ class Main(object):
         in `filename` as `encoding`
 
         :params filename: name of input file ('-' for stdin)
-        :returns :        data in 
+        :returns :        data in
         """
         encoding = 'utf-8'
         data = ''

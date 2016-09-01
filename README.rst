@@ -1,6 +1,5 @@
 Hanzi Converter 繁簡轉換器 | 繁简转换器
 =======================================
-
 This tool converts between simplified and traditional Chinese Characters.
 It consists of two parts:
 
@@ -11,13 +10,17 @@ It consists of two parts:
    :target: https://travis-ci.org/berniey/hanziconv
    :alt: Build Status
 
-.. image:: https://img.shields.io/badge/version-0.3-brightgreen.svg?style=plastic
+.. image:: https://img.shields.io/badge/version-0.3.1-brightgreen.svg?style=plastic
    :target: https://pypi.python.org/pypi/hanziconv/
    :alt: Latest Version
 
-.. image:: https://img.shields.io/badge/doc-0.3-brightgreen.svg?style=plastic
+.. image:: https://img.shields.io/badge/doc-0.3.1-brightgreen.svg?style=plastic
    :target: https://pythonhosted.org/hanziconv/
    :alt: Documentation
+
+.. image:: https://img.shields.io/badge/source-latest-blue.svg?style=plastic
+   :target: https://github.com/berniey/hanziconv
+   :alt: Source Code
 
 .. image:: https://img.shields.io/badge/license-Apache%202.0-blue.svg?style=plastic
    :target: https://raw.githubusercontent.com/berniey/hanziconv/master/LICENSE
@@ -45,7 +48,7 @@ Synopsis
     usage: hanzi-convert [-h] [-o OUTFILE] [-s] [-v] infile
 
     Simplified and Traditional Chinese Character Conversion
-    Version 0.2.3 (By Bernard Yue)
+    Version 0.3.1 (By Bernard Yue)
 
     Converting to Traditional Hanzi by default with no -s flag
 
@@ -138,10 +141,17 @@ You can either run the standalone ``runtests.py`` or standard
 
 .. code-block:: sh
 
-    $ tar zxf hanziconv-0.2.3.tar.gz
-    $ cd hanziconv-0.2.3
-    $ python setup.py test
+    $ git clone https://github.com/berniey/hanziconv
+    $ cd hanziconv
+    $ ./runtests.py
 
+or
+
+.. code-block:: sh
+
+    $ git clone https://github.com/berniey/hanziconv
+    $ cd hanziconv
+    $ python setup.py test
 
 License
 -------

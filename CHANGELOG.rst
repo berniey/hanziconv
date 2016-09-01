@@ -1,4 +1,8 @@
-Version 0.3 (2016-08-20)
+Version 0.3.1 (2016-09-01)
+==========================
+  - fix version error in documentation
+
+Version 0.3 (2016-08-22)
 ========================
   - expanding character map by using the character map from the Chinese
     University of Hong Kong (http://bit.ly/2be32he) as based. (Thanks
