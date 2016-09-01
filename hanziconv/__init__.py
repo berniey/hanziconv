@@ -91,6 +91,25 @@ Synopsis
       -v, --version         show program's version number and exit
 
 
+Example
+*******
+
+Conversion from stdin
+
+.. code-block:: sh
+
+    $ ./hanzi-convert -
+    Press Crtl-D when finished
+    Typing away
+    Now write some chinese characters
+    繁简转换器
+    ^D
+    Typing away
+    Now write some chinese characters
+    繁簡轉換器
+    $
+
+
 Testing
 -------
 The module uses `pytest <http://pytest.org/latest/>`_.  Use pip to install `pytest`.
@@ -104,6 +123,7 @@ Then checkout source code and run test as normal.
 .. code-block:: sh
 
     $ git clone https://github.com/berniey/hanziconv.git
+    $ cd hanziconv
     $ python setup.py test
 
 You are encouraged to use `virtualenv <https://virtualenv.pypa.io/en/stable/>`_

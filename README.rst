@@ -26,6 +26,7 @@ It consists of two parts:
    :target: https://raw.githubusercontent.com/berniey/hanziconv/master/LICENSE
    :alt: License
 
+
 Installation
 ------------
 
@@ -34,10 +35,16 @@ Installation
     $ pip install hanziconv
 
 
+Uninstallation
+--------------
+
+.. code-block:: sh
+
+    $ [sudo] pip uninstall hanziconv
+
+
 Command Line Tool
 -----------------
-
-The tool requires Python 2.6+
 
 Synopsis
 ********
@@ -85,11 +92,8 @@ Conversion from stdin
 Python API
 ----------
 
-This module requires Python 2.6+.  See https://pythonhosted.org/hanziconv/
-for full documentation.
-
-String Conversion
-*****************
+Example
+*******
 
 .. code-block:: pycon
 
@@ -98,54 +102,19 @@ String Conversion
     繁简转换器
     >>> print(HanziConv.toTraditional('繁简转换器'))
     繁簡轉換器
-    >>> print(HanziConv.toSimplified(u'繁簡轉換器'))
-    繁简转换器
-    >>> print(HanziConv.toTraditional(u'繁简转换器'))
-    繁簡轉換器
-    >>> print(HanziConv.toSimplified(u'mix English and Chinese. 繁簡轉換器')
-    mix English and Chinese. 繁简转换器
-    >>> print(HanziConv.toTraditional(u'mix English and Chinese. 繁简转换器'))
-    mix English and Chinese. 繁簡轉換器
-    >>> print(HanziConv.toSimplified('mix English and Chinese. 繁簡轉換器'))
-    mix English and Chinese. 繁简转换器
-    >>> print(HanziConv.toTraditional('mix English and Chinese. 繁简转换器'))
-    mix English and Chinese. 繁簡轉換器
-
-
-Comparing String
-****************
-
-.. code-block:: pycon
-
-    >>> from hanziconv import HanziConv
-    >>> u'繁簡轉換器' ==  u'繁简转换器'
-    False
-    >>> HanziConv.same(u'繁簡轉換器', u'繁简转换器')
-    True
-    >>> str1 = 'mix English and Chinese. 繁簡轉換器'
-    >>> str2 = 'mix English and Chinese. 繁简转换器'
-    >>> str3 = 'mix Chinese and English. 繁简转换器'
-    >>> str4 = u'mix English and Chinese. 繁簡轉換器'
-    >>> HanziConv.same(str1, str2)
-    True
-    >>> HanziConv.same(str2, str3)
-    False
-    >>> HanziConv.same(str1, str4)
+    >>> HanziConv.same('繁簡轉換器', '繁简转换器')
     True
 
 
 Testing
 -------
-You can either run the standalone ``runtests.py`` or standard
-``python setup.py test``
+The module uses `pytest <http://pytest.org/latest/>`_.  Use pip to install `pytest`.
 
 .. code-block:: sh
 
-    $ git clone https://github.com/berniey/hanziconv
-    $ cd hanziconv
-    $ ./runtests.py
+    $ [sudo] pip install pytest
 
-or
+Then checkout source code and run test as normal.
 
 .. code-block:: sh
 
@@ -153,7 +122,15 @@ or
     $ cd hanziconv
     $ python setup.py test
 
+
+You are encouraged to use `virtualenv <https://virtualenv.pypa.io/en/stable/>`_
+and `virtualenvwrapper <https://virtualenvwrapper.readthedocs.io/en/latest/>`_
+for to avoid changing your currently operating environment.
+
+
 License
 -------
-This module is distributed under Apache License Version 2.0.
+| This module is distributed under Apache License Version 2.0.
+The character map used in this module is based on the Multi-function
+Chinese Character Database developed by Chinese University of Hong Kong.
 
